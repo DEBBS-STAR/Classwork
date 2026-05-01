@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #201313;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #201313;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #201313;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.nav-links .active {
+    color: orange;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 700px;
+    line-height: 1.2;
+    text-align: right;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.highlight {
+    color: orange;
+}
+
+/* Tags */
+.tags {
+    margin-top: 30px;
+}
+
+.tag {
+    background: transparent;
+    border: 1px solid #555;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tag:hover {
+    border-color: orange;
+}
+
+.active-tag {
+    background-color: orange;
+    color: black;
+    border: none;
+}
+
+#headline {
+    text-align: right;
+    
+}
+.author-link {
+    color: var(--accent-yellow);
+    text-decoration: underline;
+}
+
+/* Filters */
+.topic-filters {
+    margin-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.filter-pill {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.filter-pill.active {
+    background-color: var(--accent-yellow);
+    color: #000;
+    padding: 6px 18px;
+    border-radius: 20px;
+}
+
+.filter-link {
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Blog Feed */
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post-title {
+    color: var(--accent-yellow);
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.post-excerpt {
+    font-size: 1.1rem;
+    color: var(--text-white);
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.post-tags {
+    margin-top: 15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+/* Newsletter Section */
+.newsletter-card {
+    background-color: var(--card-dark);
+    padding: 50px;
+    border-radius: 8px;
+    margin: 60px 0;
+}
+
+.newsletter-card h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.newsletter-card label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+input[type="email"] {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+.submit-btn {
+    background-color: var(--accent-red);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* Update this in your style.css if not already present */
+.post-meta .author-link {
+    color: var(--accent-yellow);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.post-title:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.post {
+    margin-bottom: 80px; /* Increased spacing for better readability */
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 40px;
+}
+
+/* Remove the border from the very last post */
+.post:last-of-type {
+    border-bottom: none;
+}
+
+/* Pagination Styling */
+.pagination {
+    display: flex;
+    gap: 15px;
+    margin: 40px 0 80px;
+    font-weight: 700;
+}
+
+.pagination a {
+    color: var(--accent-yellow);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.pagination .current {
+    color: var(--text-white);
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent-yellow);
+}
+
+/* Simple Footer */
+footer {
+    border-top: 1px solid var(--border-color);
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Pagination */
+.pagination {
+    max-width: 900px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.pagination a, .pagination .current {
+    text-decoration: none;
+    padding: 0 4px;
+}
+
+.pagination .current {
+    color: var(--accent-yellow);
+}
+
+.pagination a {
+    color: var(--text-white);
+    border-bottom: 2px dotted #666;
+}
+
+.pagination .gap {
+    color: var(--text-muted);
+}
+
+/* Detailed Footer */
+.site-footer {
+    border-top: 1px solid var(--border-color);
+    padding: 100px 40px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-brand .logo {
+    font-size: 2rem;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: 2px dotted #666;
+    width: fit-content;
+}
+
+.footer-col a.highlight {
+    color: var(--accent-yellow);
+    border-bottom: 2px solid var(--accent-yellow);
+}
+
+.footer-col a:hover {
+    border-bottom-style: solid;
+}

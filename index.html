@@ -3,39 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thoughtbot</title>
-    <link rel="stylesheet" href="style css">
+    <title>Thoughtbot Cloning</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+    <!-- Navbar -->
+<nav class="navbar">
     <img width="100" src="thoughtbot logo.png" alt="">
-    <a href="">Services</a>
-    <a href="">Industries</a>
-    <a href="">Case Studies</a>
-    <a href="">Resources</a>
-    
-    <h1>Giant Robots Smashing Into Other Giant Robots</h1>
-    <li>Written by thoughtbot, your expert partner for design and development.</li>
-    <button>All Topics</button>
-    <button>Design</button>
-    <button>Development</button>
-    <button>Product</button>
-    <a href="#" class="more">More topics</a>
-    <h1>Retro-driven development</h1>
-    <li>Twenty-four refactor-from-retro commits in a week. How the management system started refactoring itself.</li>
-    <li>Rob Whittaker-April 28, 2026</li>
-    <li>AI,Claude,Code,Management,Gtd,Productivity</li>
-    
-    <h1>Sign up to receive a weekly recap from thoughtbot</h1>
-    <li>Your email address</li> <ul><button>suscribe</button></ul>
+    <ul class="nav-links">
+    <li>Services</li>
+    <li>Industries</li>
+    <li>Case Studies</li>
+    <li>Resources</li>
+    <li class="active">Blog</li>
+    </ul>
+</nav>
 
-    <li>Looking for even more ways to stay connected?</li>
-    <ul><a href="">Check out 
-        our feeds</a></ul>
-        <h1>Trimming our CSS with sibling-index() and sibling-count()</h1>
-        <li>We’re experimenting with two new CSS functions to clean up our logo marquee code.</li>
-<li>Elaina Natario-April 24,2026</li>
-<li>CSS,Design,Frontend</li>
-<h1>Seven commands and the communication layer that emerged</h1>
-<li></li>
+    <!-- Main Section -->
+    <section class="hero">
+    <div class="headline">
+        <h1>Giant Robots Smashing Into Other Giant Robots</h1>
+    </div>
+    <p>
+    Written by <span class="highlight">thoughtbot</span>, 
+    your expert partner for design and development.
+    </p>
+
+    <!-- Tags -->
+    <div class="tags">
+    <button class="tag active-tag">All Topics</button>
+    <button class="tag">Design</button>
+    <button class="tag">Development</button>
+    <button class="tag">Product</button>
+    <button class="tag dotted lines">More Topics</button>
+    </div>
+    </section>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- Header 1 -->
+        <header class="post">
+            <h2 class="post-title">Your carousel might not be accessible: designing for reduced motion</h2>
+            <p class="post-excerpt">Accessibility as the key factor for debugging, designing and developing a carousel with logos on a webpage.</p>
+            <div class="post-meta">Valeria Graffeo — May 1, 2026</div>
+            <div class="post-tags">CSS, DESIGN, FRONTEND, ACCESSIBILITY</div>
+        </header>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-card">
+            <h3>Sign up to receive a weekly recap from thoughtbot</h3>
+            <label for="email">Your email address</label>
+            <div class="form-row">
+                <input type="email" id="email" name="email">
+                <button type="submit" class="submit-btn">Subscribe</button>
+            </div>
+        </section>
+
+        <!-- Header 2 -->
+        <header class="post">
+            <h2 class="post-title">Reviewing Dependabot PRs is boring. Let Claude do it for you.</h2>
+            <p class="post-excerpt">A Claude skill to do the boring stuff for us.</p>
+            <div class="post-meta">Jose Blanco — April 30, 2026</div>
+            <div class="post-tags">ARTIFICIAL INTELLIGENCE, RAILS, REVIEW, CLAUDE, AI, DEVELOPMENT, SKILLS, DEPENDABOT</div>
+        </header>
+    </main>
+
+</body>
+</html>
+<!-- Header 3 -->
+        <header class="post">
+            <h2 class="post-title">Retro-driven development</h2>
+            <p class="post-excerpt">Twenty-four refactor-from-retro commits in a week. How the management system started refactoring itself.</p>
+            <div class="post-meta"><span class="author-link">Rob Whittaker</span> — April 28, 2026</div>
+            <div class="post-tags">AI, CLAUDE CODE, MANAGEMENT, GTD, PRODUCTIVITY</div>
+        </header>
+
+        <!-- Header 4 -->
+        <header class="post">
+            <h2 class="post-title">Trimming our CSS with sibling-index() and sibling-count()</h2>
+            <p class="post-excerpt">We're experimenting with two new CSS functions to clean up our logo marquee code.</p>
+            <div class="post-meta"><span class="author-link">Elaina Natario</span> — April 24, 2026</div>
+            <div class="post-tags">CSS, DESIGN, FRONTEND</div>
+        </header>
+
+        <!-- Header 5 -->
+        <header class="post">
+            <h2 class="post-title">Seven commands and the communication layer that emerged</h2>
+            <p class="post-excerpt">Week three of building a management system with Claude Code. Seventeen commits in one day, a command that lasted 24 hours, and the realisation that commands are conversations.</p>
+            <div class="post-meta"><span class="author-link">Rob Whittaker</span> — April 23, 2026</div>
+            <div class="post-tags">AI, CLAUDE CODE, MANAGEMENT, GTD, PRODUCTIVITY</div>
+        </header>
+
+        <!-- Header 6 -->
+        <header class="post">
+            <h2 class="post-title">Human vs Machine: the Bug</h2>
+            <p class="post-excerpt">Sally fixes a bug without AI, then invites Claude to try.</p>
+            <div class="post-meta"><span class="author-link">Sally Hall</span> — April 22, 2026</div>
+            <div class="post-tags">AI, CLAUDE, RAILS, DEBUGGING</div>
+        </header>
+
+        <!-- Header 7 -->
+        <header class="post">
+            <h2 class="post-title">Let's enable MFA for all Ruby gems</h2>
+            <p class="post-excerpt">Supply chain attacks are getting more common. RubyGems might be next. Here's how to help the ecosystem be safer.</p>
+            <div class="post-meta"><span class="author-link">Matheus Richard</span> — April 21, 2026</div>
+            <div class="post-tags">RUBY, SECURITY</div>
+        </header>
+
+        <!-- Header 8 -->
+        <header class="post">
+            <h2 class="post-title">Ship faster: How to unlock development speed in regulated industries</h2>
+            <p class="post-excerpt">Slow development isn't always a code problem. It's often a process one, especially in regulated industries. Here's how navigating change to embrace a shared agile process helped one of our clients start finishing ahead of schedule.</p>
+            <div class="post-meta"><span class="author-link">Michelle Taute</span> — April 20, 2026</div>
+            <div class="post-tags">DESIGN SPRINT, PRODUCT MANAGEMENT, AGILE</div>
+        </header>
+
+        <!-- Header 9 -->
+        <header class="post">
+            <h2 class="post-title">PII filtering for RubyLLM with Top Secret</h2>
+            <p class="post-excerpt">Automatically filter sensitive information from your RubyLLM conversations before it reaches third-party providers.</p>
+            <div class="post-meta"><span class="author-link">Steve Polito</span> — April 17, 2026</div>
+            <div class="post-tags">OPEN SOURCE, ARTIFICIAL INTELLIGENCE, LANGUAGE MODELS, RUBY, LLM, RUBYLLM</div>
+        </header>
+
+        <!-- Header 10 -->
+        <header class="post">
+            <h2  class="post-title">Giant Robots Podcast Ep 608: Project Updates with Will, Chad and Sami</h2>
+            <p class="post-excerpt">Our hosts provide a peek behind the scenes as they discuss their work on recent thoughtbot projects.</p>
+            <div class="post-meta"><span class="author-link">Chad Pytel, Will Larry & Sami Birnbaum</span> — April 16, 2026</div>
+            <div class="post-tags">PODCAST</div>
+        </header>
+
+        <!-- Pagination -->
+    <nav class="pagination" aria-label="Blog pagination">
+        <span class="current">1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <span class="gap">...</span>
+        <a href="#">Next ></a>
+        <a href="#">Last »</a>
+    </nav>
+
+    <!-- Detailed Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img width="100" src="thoughtbot logo.png" alt="">
+                </div>
+            </div>
+            
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <a href="#">Services</a>
+                    <a href="#">Case Studies</a>
+                    <a href="#">Resources</a>
+                    <a href="#" class="highlight">Let's Talk</a>
+                </div>
+                <div class="footer-col">
+                    <a href="#">Our Company</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Purpose</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Events</a>
+                    <a href="#">Sponsor</a>
+                    <a href="#">Store</a>
+                </div>
+                <div class="footer-col">
+                    <a href="#">Mastodon</a>
+                    <a href="#">Bluesky</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Twitch</a>
+                    <a href="#">Feeds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
 </body>
 </html>
